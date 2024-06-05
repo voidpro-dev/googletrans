@@ -8,6 +8,7 @@ import random
 import typing
 
 import httpcore
+setattr(httpcore, 'SyncHTTPTransport', 'AsyncHTTPProxy')
 import httpx
 from httpx import Timeout
 
